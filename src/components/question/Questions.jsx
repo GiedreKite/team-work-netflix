@@ -13,12 +13,65 @@ export function Questions(props) {
     const [show5, setShow5] = useState(false);
     const [show6, setShow6] = useState(false);
 
+
+    function hide0() {
+        if(show0===false) {
+            setShow0(true)
+        }
+        if(show0===true) {
+            setShow0(false)
+        }}
+        function hide1() {
+        if(show1===false) {
+            setShow1(true)
+        }
+        if(show1===true) {
+            setShow1(false)
+        }}
+        function hide2() {
+        if(show2===false) {
+            setShow2(true)
+        }
+        if(show2===true) {
+            setShow2(false)
+        }}
+        function hide3() {
+        if(show3===false) {
+            setShow3(true)
+        }
+        if(show3===true) {
+            setShow3(false)
+        }}
+        function hide4() {
+        if(show4===false) {
+            setShow4(true)
+        }
+        if(show4===true) {
+            setShow4(false)
+        }}
+        function hide5() {
+        if(show5===false) {
+            setShow5(true)
+        }
+        if(show5===true) {
+            setShow5(false)
+        }}
+        function hide6() {
+        if(show6===false) {
+            setShow6(true)
+        }
+        if(show6===true) {
+            setShow6(false)
+        }}
+
+
+    
     return <>
     <h2>Frequently Asked Questions</h2>
 
    <section className={style.container}>
     <div  className={style.questionContainer}>
-        <button onClick={() => setShow0(true)} className={style.question}>What is Netflix?
+        <button onClick={() => hide0()} className={style.question}>What is Netflix?
             <img style={show0===true ? (false ? {display: "flex"}: {display: "none"} ) : {}} className={style.questionImg} src={plus} alt="plus" />
             <img style={show0===false ? (true ? {display: "none"}: {display: "flex"} ) : {}} className={style.questionImg} src={x} alt="x" />
         </button>
@@ -26,7 +79,7 @@ export function Questions(props) {
     </div>
 
     <div className={style.questionContainer}>
-        <button onClick={() => setShow1(true)} className={style.question}>How much does Netflix cost?
+        <button onClick={() => hide1()} className={style.question}>How much does Netflix cost?
             <img style={show1===true ? (false ? {display: "flex"}: {display: "none"} ) : {}} className={style.questionImg} src={plus} alt="plus" />
             <img style={show1===false ? (true ? {display: "none"}: {display: "flex"} ) : {}} className={style.questionImg} src={x} alt="x" />
         </button>
@@ -34,7 +87,7 @@ export function Questions(props) {
     </div>
 
     <div className={style.questionContainer}>
-        <button onClick={() => setShow2(true)} className={style.question}>Where can I watch?
+        <button onClick={() => hide2()} className={style.question}>Where can I watch?
             <img style={show2===true ? (false ? {display: "flex"}: {display: "none"} ) : {}} className={style.questionImg} src={plus} alt="plus" />
             <img style={show2===false ? (true ? {display: "none"}: {display: "flex"} ) : {}} className={style.questionImg} src={x} alt="x" />
         </button>
@@ -42,7 +95,7 @@ export function Questions(props) {
     </div>
 
     <div className={style.questionContainer}>
-        <button onClick={() => setShow3(true)} className={style.question}>How do I cancel?
+        <button onClick={() => hide3()} className={style.question}>How do I cancel?
             <img style={show3===true ? (false ? {display: "flex"}: {display: "none"} ) : {}} className={style.questionImg} src={plus} alt="plus" />
             <img style={show3===false ? (true ? {display: "none"}: {display: "flex"} ) : {}} className={style.questionImg} src={x} alt="x" />
         </button>
@@ -50,7 +103,7 @@ export function Questions(props) {
     </div>
 
     <div className={style.questionContainer}>
-        <button onClick={() => setShow4(true)} className={style.question}>What can I watch on Netflix?
+        <button onClick={() => hide4()} className={style.question}>What can I watch on Netflix?
             <img style={show4===true ? (false ? {display: "flex"}: {display: "none"} ) : {}} className={style.questionImg} src={plus} alt="plus" />
             <img style={show4===false ? (true ? {display: "none"}: {display: "flex"} ) : {}} className={style.questionImg} src={x} alt="x" />
         </button>
@@ -58,7 +111,7 @@ export function Questions(props) {
     </div>
 
     <div className={style.questionContainer}>
-        <button onClick={() => setShow5(true)} className={style.question}>Is Netflix good for kids?
+        <button onClick={() => hide5()} className={style.question}>Is Netflix good for kids?
             <img style={show5===true ? (false ? {display: "flex"}: {display: "none"} ) : {}} className={style.questionImg} src={plus} alt="plus" />
             <img style={show5===false ? (true ? {display: "none"}: {display: "flex"} ) : {}} className={style.questionImg} src={x} alt="x" />
         </button>
@@ -66,7 +119,7 @@ export function Questions(props) {
     </div>
 
     <div className={style.questionContainer}>
-        <button onClick={() => setShow6(true)} className={style.question}>
+        <button onClick={() => hide6()} className={style.question}>
            Why am I seeing this language?
             <img style={show6===true ? (false ? {display: "flex"}: {display: "none"} ) : {}} className={style.questionImg} src={plus} alt="plus" />
             <img style={show6===false ? (true ? {display: "none"}: {display: "flex"} ) : {}} className={style.questionImg} src={x} alt="x" />
