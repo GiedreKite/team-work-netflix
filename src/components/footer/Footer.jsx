@@ -57,17 +57,10 @@ const Footer = () => {
       </div>
 
       <div className={styles.footerBottom}>
-        <div className={styles.languageDropdown}>
-          <button className={styles.languageButton} onClick={toggleDropdown}>
-            {language}
-          </button>
-          {showDropdown && (
-            <div className={styles.dropdownMenu}>
-              <button className={styles.dropdownItem} onClick={() => selectLanguage('English')}>English</button>
-              <button className={styles.dropdownItem} onClick={() => selectLanguage('Lithuanian')}>Lithuanian</button>
-            </div>
-          )}
-        </div>
+      <select className={styles.languageSelect}>
+        <option value="english">English</option>
+        <option value="lithuanian">Lietuvių</option>
+      </select>
         <p className={styles.country}>Netflix Lithuania</p>
       </div>
     </footer>

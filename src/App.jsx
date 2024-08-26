@@ -7,8 +7,8 @@ import { Questions } from './components/question/Questions'
 import { LoginSection } from './components/loginSection/LoginSection'
 import {ReasonsToJoin} from './components/reason/ReasonToJoin'
 import Footer from './components/footer/Footer.jsx'
-import SectionTwoTrend from './components/mindaugas/SectionTwoTrend.jsx'
-import SectionTwoCard from './components/mindaugas/SectionTwoCard.jsx'
+import SectionTwoTrend from './components/sectionTwo/SectionTwoTrend.jsx'
+import SectionTwoCard from './components/sectionTwo/SectionTwoCard.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
