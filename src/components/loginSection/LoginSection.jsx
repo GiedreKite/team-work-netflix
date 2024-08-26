@@ -12,7 +12,7 @@ export function LoginSection () {
             <img className={style.logo} src={logo} alt="Logo" />
           </div>
           <nav className={style.btnSelect}>
-            <select className={style.languageSelect}>
+            <select >
               <option value="english">English</option>
               <option value="lithuanian">Lietuvių</option>
             </select>

@@ -64,7 +64,7 @@
 }
 
 .signInBtn:hover {
-    background-color: #f40612;
+    background-color: #f40612b2;
 }
 
 
@@ -139,5 +139,5 @@
 }
 
 .getStartedButton:hover {
-    background-color: #d6040f;
+    background-color: #f40612b2;
 }
